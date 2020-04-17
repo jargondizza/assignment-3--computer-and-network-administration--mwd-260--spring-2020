@@ -20,7 +20,7 @@ Write a script that recursively copies all the files in one folder to another fo
 for FILE in test/.
 do
     echo "Copying $FILE"
-    cp $FILE /home/jacquelyn/test1
+    cp -R $FILE /home/jacquelyn/test1
 done
 
 ```
