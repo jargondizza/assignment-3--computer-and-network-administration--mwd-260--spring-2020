@@ -59,6 +59,20 @@ Write a script that reports every file name in a folder as two items: the filena
 Write a script that requests the user answer `y` or `n` to a prompt, and only exits when either of the two responses is entered. The user’s response should be echoed to the screen _before_ the program exits. (_`28` pts_)
 
 ```
+#!/bin/bash
+read -p "Enter y or n: " ANSWER 
+case "$ANSWER" in
+    [yY])
+        echo "You answered yes."
+        ;;
+    [nN])
+        echo "You answered no."
+        ;;
+    *)
+        echo "Try Again."
+        ;;
+esac
+
 ```
 
 ## ❖・Due・❖
