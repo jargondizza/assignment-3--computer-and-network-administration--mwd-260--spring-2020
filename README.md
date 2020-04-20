@@ -22,6 +22,7 @@ do
     echo "Copying $FILE"
     cp -R $FILE /home/jacquelyn/test1
 done
+exit 0
 
 ```
 
@@ -55,6 +56,17 @@ rmdir empty1 empty2 empty3
 Write a script that reports every file name in a folder as two items: the filename and its extension. Each item should appear on a new line. (_`12` pts_)
 
 ```
+#!/bin/bash
+filename=$1
+extension=$2
+
+for FILE in /dir/*
+do 
+    echo "The filename is $1" /n
+    echo "It's extension is $2"
+done 
+exit 0
+
 ```
 
 ### Question 7
