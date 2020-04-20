@@ -30,6 +30,16 @@ exit 0
 Write a script that checks whether a program exists on your machine. If it doesn’t, it should try to fetch the program via `apt install`. (_`12` pts_)
 
 ```
+#!/bin/bash
+if ! which command > /dev/null;
+then
+    echo "Command not found, but can be installed. Install? (y/n)"
+    read
+    if "$ANSWER" = "y"; then
+        sudo apt install command 
+    fi
+fi
+exit 0
 ```
 
 ### Question 3
