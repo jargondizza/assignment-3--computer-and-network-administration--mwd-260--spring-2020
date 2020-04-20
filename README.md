@@ -46,6 +46,7 @@ exit 0
 Write a command that will create an empty file with a `.txt` extension named after the current folder. (_`12` pts_)
 
 ```
+touch emptyfile.txt
 ```
 
 ### Question 4
